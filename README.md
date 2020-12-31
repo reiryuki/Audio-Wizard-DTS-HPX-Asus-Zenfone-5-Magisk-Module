@@ -12,10 +12,10 @@
 - AudioFX Moto
 - AudioFX LineageOS
 - MusicFX AOSP
-- Maybe some others which are not post process type FX
+- Other EQ which are not post process type FX
 
 ## Compatible with
-- Sound Enhancement Xperia (This is a post process bundle proxy type FX)
+- Sound Enhancement Xperia
 
 ## Requirements
 - Android 8.0, 8.1, 9, 10, or 11
