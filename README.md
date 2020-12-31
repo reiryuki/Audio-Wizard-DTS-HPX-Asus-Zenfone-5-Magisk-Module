@@ -10,9 +10,6 @@
 - Dolby Atmos / Dolby Audio / Moto Dolby
 - Moto Waves
 - AudioFX Moto
-- AudioFX LineageOS
-- MusicFX AOSP
-- Other EQ which are not post process type FX
 
 ## Compatible with
 - Sound Enhancement Xperia
