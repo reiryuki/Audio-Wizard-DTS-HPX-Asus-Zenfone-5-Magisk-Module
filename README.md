@@ -23,7 +23,7 @@
 ## Installation Guide
 - Remove test version if using it
 - Reboot
-- Install the module via Magisk Manager only
+- Install the module via Magisk Manager or Recovery
 - Reboot
 
 ## Optional
