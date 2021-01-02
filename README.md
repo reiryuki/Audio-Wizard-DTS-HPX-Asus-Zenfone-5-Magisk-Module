@@ -30,6 +30,7 @@
 ## Optional
 
 ## Troubleshootings
+- If SE policy patch doesn't work, remove tag symbols inside /data/adb/modules/AudioWizard/service.sh and reboot to enable permissive mode.
 - Install Audio Modification Library module if you using other audio mods
 - Use Audio Compatibility Patch module only if EQ is not processing with non Music apps
 - Delete /data/adb/modules/AudioWizard and /persist|metadata/magisk/AudioWizard via recovery if facing bootloop and send copied and zipped /data/system/dropbox files to dev for fix
