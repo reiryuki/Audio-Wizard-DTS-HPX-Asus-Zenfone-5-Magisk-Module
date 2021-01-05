@@ -22,17 +22,22 @@
 - Android 10 arm64 CrDroid ROM
 
 ## Installation Guide
-- Remove test version if using it
-- Reboot
 - Install the module via Magisk Manager or Recovery
 - Reboot
 
 ## Optional
 
 ## Troubleshootings
-- If SE policy patch doesn't work, remove tag symbols inside /data/adb/modules/AudioWizard/service.sh and reboot to enable permissive mode.
+- If SE policy patch doesn't work for your device, run at Terminal Emulator:
+  `su`
+  `setprop` `aw.permissive` `1`
+   Then reflash the module
+- If something goes wrong with Audio Wizard data, run at Terminal Emulator:
+  `su`
+  `setprop` `aw.cleanup` `1`
+   Then reflash the module
 - Install Audio Modification Library module if you using other audio mods
-- Use Audio Compatibility Patch module only if EQ is not processing with non Music apps
+- Audio Compatibility Patch module is not recommended!
 - Delete /data/adb/modules/AudioWizard and /persist|metadata/magisk/AudioWizard via recovery if facing bootloop and send copied and zipped /data/system/dropbox files to dev for fix
 - Open issues with sending full logcats if this module is not working for your device
 
