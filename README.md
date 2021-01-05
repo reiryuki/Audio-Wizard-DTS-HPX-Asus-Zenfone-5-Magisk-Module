@@ -31,10 +31,12 @@
 - If SE policy patch doesn't work for your device, run at Terminal Emulator:
   `su`
   `setprop` `aw.permissive` `1`
+
    Then reflash the module
 - If something goes wrong with Audio Wizard data, run at Terminal Emulator:
   `su`
   `setprop` `aw.cleanup` `1`
+
    Then reflash the module
 - Install Audio Modification Library module if you using other audio mods
 - Audio Compatibility Patch module is not recommended!
