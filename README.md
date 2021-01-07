@@ -1,10 +1,11 @@
 # Audio Wizard DTS Headphone X Asus Zenfone 5 Magisk Module
 
 ## Descriptions
-- An equalizer ported from Asus Zenfone 5 (ASUS_X00QD) (old version)
+- An equalizer ported from Asus Zenfone 5 (ASUS_X00QD)
 - A recovered module by JohnFawkes, lazerl0rd, & UltraM8 and fixed bugs
 - Post process type FX
 - Changing build product and product model, may breaks your platform apps
+- soundfx library still using old source
 
 ## Not Compatible with
 - Mi Music or any player that forcing compress offload playback
@@ -50,12 +51,12 @@
 ## Attention!
 - Always make nandroid backup before install or updating version, these are just experiments!
 - Reporting without logcats is not allowed
-- Special thanks to all people that helped and tested my modules.
 
 ## Credits
 - JohnFawkes
 - lazerl0rd
 - UltraM8
+- All people that helped and tested my modules
 
 ## Telegram
 - https://t.me/audioryukimods
