@@ -5,7 +5,7 @@
 - A recovered module by JohnFawkes, lazerl0rd, & UltraM8 and fixed bugs
 - Post process type FX
 - Changing build product and product model, may breaks your platform apps
-- soundfx library still using old source
+- soundfx library still using Oreo source
 
 ## Not Compatible with
 - Mi Music or any player that forcing compress offload playback
