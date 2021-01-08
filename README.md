@@ -5,7 +5,7 @@
 - A recovered module by JohnFawkes, lazerl0rd, & UltraM8 and fixed bugs
 - Post process type FX
 - Changing build product and product model, may breaks your platform apps
-- soundfx library still using Oreo source
+- SoundFX library still using Oreo source because of license limitation. If you can give me dts-eagle.lic from Zen 5 Pie or above, I can update the library.
 
 ## Not Compatible with
 - Mi Music or any player that forcing compress offload playback
