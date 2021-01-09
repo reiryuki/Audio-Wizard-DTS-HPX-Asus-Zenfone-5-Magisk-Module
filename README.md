@@ -33,7 +33,7 @@
 
   `setprop` `aw.patch` `1`
 
-   Then reflash the module. Not possible to patch ro.product.model because DTS license check.
+   Then reflash the module. Not possible to patch ro.product.model because of DTS license check.
 
 ## Troubleshootings
 - If SE policy patch doesn't work for your device, run at Terminal Emulator:
