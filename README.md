@@ -60,9 +60,9 @@
 - Reporting without logcats is not allowed
 
 ## Credits
-- JohnFawkes
-- lazerl0rd
-- UltraM8
+- @JohnFawkes
+- @lazerl0rd
+- @UltraM8
 - @aquahol for changing my .jks key to .x509.pem and .pk8
 - All people that helped and tested my modules
 
