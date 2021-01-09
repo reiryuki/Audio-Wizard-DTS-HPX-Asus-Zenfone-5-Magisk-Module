@@ -27,6 +27,13 @@
 - Reboot
 
 ## Optional
+- You can make this module not to change ro.build.product. Run at Terminal Emulator:
+  
+  `su`
+
+  `setprop` `aw.patch` `1`
+
+   Then reflash the module. Not possible to patch ro.product.model because DTS license check.
 
 ## Troubleshootings
 - If SE policy patch doesn't work for your device, run at Terminal Emulator:
