@@ -69,7 +69,7 @@
 - @JohnFawkes
 - @lazerl0rd
 - @UltraM8
-- @aquahol for changing my .jks key to .x509.pem and .pk8
+- @aquahol
 - All people that helped and tested my modules
 
 ## Telegram
