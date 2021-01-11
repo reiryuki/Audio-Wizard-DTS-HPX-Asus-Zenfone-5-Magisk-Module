@@ -43,6 +43,12 @@
   `setprop` `aw.permissive` `1`
 
    Then reflash the module
+- You can also using both permissive mode and SE policy rule with:
+
+  `su`
+
+  `setprop` `aw.permissive` `2`
+
 - If something goes wrong with Audio Wizard data, run at Terminal Emulator:
 
   `su`
