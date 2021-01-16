@@ -27,7 +27,7 @@
 - Reboot
 
 ## Optional
-- Patch to not changing ro.build.product is enabled by defaul. But you can disable that by run at Terminal Emulator:
+- Patch to not changing ro.build.product is enabled by default (v1.3). But you can disable that by run at Terminal Emulator:
   
   `su`
 
