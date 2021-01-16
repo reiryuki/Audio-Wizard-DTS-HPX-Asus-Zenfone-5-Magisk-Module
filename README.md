@@ -27,11 +27,11 @@
 - Reboot
 
 ## Optional
-- You can make this module not to change ro.build.product. Run at Terminal Emulator:
+- Patch to not changing ro.build.product is enabled by defaul. But you can disable that by run at Terminal Emulator:
   
   `su`
 
-  `setprop` `aw.patch` `1`
+  `setprop` `aw.patch` `0`
 
    Then reflash the module. Not possible to patch ro.product.model because of DTS license check.
 
