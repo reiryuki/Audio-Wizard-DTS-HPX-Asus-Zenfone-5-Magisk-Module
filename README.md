@@ -71,6 +71,7 @@
 - @lazerl0rd
 - @UltraM8
 - @aquahol
+- @aip_x
 - All people that helped and tested my modules
 
 ## Telegram
