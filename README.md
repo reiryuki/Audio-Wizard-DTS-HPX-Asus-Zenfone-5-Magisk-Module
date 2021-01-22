@@ -27,13 +27,6 @@
 - Reboot
 
 ## Optional
-- Patch to not changing ro.build.product is enabled by default (v1.3). But you can disable that by run at Terminal Emulator:
-  
-  `su`
-
-  `setprop` `aw.patch` `0`
-
-   Then reflash the module. Not possible to patch ro.product.model because of DTS license check.
 
 ## Troubleshootings
 - If SE policy patch doesn't work for your device, run at Terminal Emulator:
@@ -56,6 +49,14 @@
   `setprop` `aw.cleanup` `1`
 
    Then reflash the module
+- Patch to not changing ro.build.product is enabled by default (v1.3). But if you got problem with it, you can disable it by run at Terminal Emulator:
+  
+  `su`
+
+  `setprop` `aw.patch` `0`
+
+   Then reflash the module.
+- No possible to patch ro.product.model because of DTS license check
 - Install Audio Modification Library module if you using other audio mods
 - Audio Compatibility Patch module is not recommended!
 - Delete /data/adb/modules/AudioWizard and /persist|metadata/magisk/AudioWizard via recovery if facing bootloop and send copied and zipped /data/system/dropbox files to dev for fix
