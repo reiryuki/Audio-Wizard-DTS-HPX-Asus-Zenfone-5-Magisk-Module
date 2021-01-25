@@ -9,9 +9,7 @@
 
 ## Not Compatible with
 - Mi Music or any player that forcing compress offload playback
-- Dolby Atmos / Dolby Audio / Moto Dolby (maybe different case in different rom)
-- Moto Waves (maybe different case in different rom)
-- AudioFX Moto (maybe different case in different rom)
+- Dolby, Moto Waves, AudioFX Moto, or any global type soundfx (different case in different rom)
 
 ## Compatible with
 - Sound Enhancement Xperia
