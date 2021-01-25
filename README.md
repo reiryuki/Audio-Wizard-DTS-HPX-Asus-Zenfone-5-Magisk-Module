@@ -15,6 +15,8 @@
 
 ## Compatible with
 - Sound Enhancement Xperia
+- MusicFX AOSP
+- AudioFX LineageOS
 
 ## Requirements
 - Android 8.0, 8.1, 9, 10, or 11
