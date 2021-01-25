@@ -49,7 +49,7 @@
   `setprop` `aw.cleanup` `1`
 
    Then reflash the module
-- Patch to not changing ro.build.product is enabled by default (v1.3). But if you got problem with it, you can disable it by run at Terminal Emulator:
+- Patch to not change ro.build.product is enabled by default (v1.3). But if you got problem with it, you can disable it by run at Terminal Emulator:
   
   `su`
 
