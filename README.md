@@ -24,7 +24,7 @@
 
 ## Installation Guide
 - Install the module via Magisk Manager or Recovery
-- Reboot
+- Reboot (reboot twice if you have Magisk sepolicy.rule bug)
 
 ## Optional
 
