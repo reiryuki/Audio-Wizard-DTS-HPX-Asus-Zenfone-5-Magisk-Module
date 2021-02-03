@@ -67,6 +67,7 @@
 - Reporting without logcats is not allowed
 
 ## Credits
+- @guitardedhero
 - @JohnFawkes
 - @lazerl0rd
 - @UltraM8
