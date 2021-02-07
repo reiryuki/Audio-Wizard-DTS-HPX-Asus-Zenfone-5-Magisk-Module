@@ -2,7 +2,7 @@
 
 ## Descriptions
 - An equalizer ported from Asus Zenfone 5 (ASUS_X00QD) SDK 28
-- A recovered module by JohnFawkes, lazerl0rd, & UltraM8 and fixed bugs
+- A recovered module by @Michi_Nemuritor
 - Post process type FX
 - Changing build product and product model, may breaks your platform apps
 - SoundFX library still using Oreo source.
@@ -67,13 +67,10 @@
 - Reporting without logcats is not allowed
 
 ## Credits
-- @guitardedhero
-- @JohnFawkes
-- @lazerl0rd
-- @UltraM8
+- @Michi_Nemuritor
 - @aquahol
 - @aip_x
-- All people that helped and tested my modules
+- All people for helps and supports
 
 ## Telegram
 - https://t.me/audioryukimods
