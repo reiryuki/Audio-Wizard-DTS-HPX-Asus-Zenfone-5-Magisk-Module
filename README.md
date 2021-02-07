@@ -2,10 +2,9 @@
 
 ## Descriptions
 - An equalizer ported from Asus Zenfone 5 (ASUS_X00QD) SDK 28
-- A recovered module by @Michi_Nemuritor
+- A recovered module by @Michi_Nemuritor and updated apps and blobs from Pie source, but SoundFX library still using Oreo source modded by him.
 - Post process type FX
 - Changing build product and product model, may breaks your platform apps
-- SoundFX library still using Oreo source.
 
 ## Not Compatible with
 - Mi Music or any player that forcing compress offload playback
