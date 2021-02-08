@@ -23,11 +23,13 @@
 
 ## Installation Guide
 - Install the module via Magisk Manager or Recovery
-- Reboot (reboot twice if you have Magisk sepolicy.rule bug)
+- Install Audio Modification Library module if you using other audio mods
+- Reboot (reboot twice without reinstalling if you have Magisk sepolicy.rule bug)
 
 ## Optional
 
 ## Troubleshootings
+- If UI shows blank only, you should reboot it again without reinstalling. It's probably Magisk sepolicy.rule bug.
 - If SE policy patch doesn't work for your device, run at Terminal Emulator:
 
   `su`
@@ -57,7 +59,7 @@
    Then reflash the module.
 - No possible to patch ro.product.model because of DTS license check
 - Install Audio Modification Library module if you using other audio mods
-- Audio Compatibility Patch module is not recommended!
+- Audio Compatibility Patch module is not recommended as it disabling deep buffer which caused problem for audio balance ROM feature, but you can use that if FX not processing correctly
 - Delete /data/adb/modules/AudioWizard and /persist|metadata/magisk/AudioWizard via recovery if facing bootloop and send copied and zipped /data/system/dropbox files to dev for fix
 - Open issues with sending full logcats if this module is not working for your device
 
