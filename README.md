@@ -65,7 +65,7 @@
 - Always make nandroid backup before install or updating version, these are just experiments!
 - Reporting without logcats is not allowed
 
-## Credits and contributors
+## Credits, contributors, and helps
 - @Michi_Nemuritor
 - @guitardedhero
 - @JohnFawkes
