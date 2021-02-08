@@ -2,7 +2,7 @@
 
 ## Descriptions
 - An equalizer ported from Asus Zenfone 5 (ASUS_X00QD) SDK 28
-- Still using SoundFX library from Oreo source ported by @Michi_Nemuritor
+- Still using SoundFX library from Oreo source by @Michi_Nemuritor
 - Post process type FX
 - Changing build product and product model, may breaks your platform apps or features functionality
 
