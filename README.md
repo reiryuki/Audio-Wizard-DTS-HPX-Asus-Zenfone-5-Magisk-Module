@@ -67,6 +67,11 @@
 
 ## Credits and contributors
 - @Michi_Nemuritor
+- @guitardedhero
+- @JohnFawkes
+- @lazerl0rd
+- @UltraM8
+- @Zackptg5
 - @aquahol
 - @aip_x
 - All people for helps and supports
