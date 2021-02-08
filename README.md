@@ -69,12 +69,16 @@
 - @Michi_Nemuritor
 - @guitardedhero
 - @JohnFawkes
-- @lazerl0rd
-- @UltraM8
 - @Zackptg5
+- @UltraM8
+- @lazerl0rd
 - @aquahol
 - @aip_x
-- All people for helps and supports
+
+## Supports
+- Laugeek
+- @derricksrs
+- @ItssJohnny
 
 ## Telegram
 - https://t.me/audioryukimods
