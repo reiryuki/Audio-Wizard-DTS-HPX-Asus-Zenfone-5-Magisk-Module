@@ -4,7 +4,7 @@
 - An equalizer ported from Asus Zenfone 5 (ASUS_X00QD) SDK 28
 - Still using SoundFX library from Oreo source by @Michi_Nemuritor
 - Post process type FX
-- Changing build product and product model, may breaks your platform apps or features functionality
+- Changing build product and product model, may break your platform apps and features functionality
 
 ## Not Compatible with
 - Mi Music or any player that forcing compress offload playback
