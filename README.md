@@ -78,9 +78,7 @@
 - @aip_x
 
 ## Supports
-- Laugeek
-- @derricksrs
-- @ItssJohnny
+- [Tap here](https://t.me/audioryukimods/2619)
 
 ## Telegram
 - https://t.me/audioryukimods
