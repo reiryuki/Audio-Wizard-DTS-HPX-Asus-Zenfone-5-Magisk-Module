@@ -58,7 +58,7 @@
    Then reflash the module.
 - No possible to patch ro.product.model because of DTS license check
 - Install Audio Modification Library module if you using other audio mods
-- Audio Compatibility Patch module is not recommended as it disabling deep buffer which causes problem for audio balance ROM feature, but you can use that if FX is not processing correctly
+- Audio Compatibility Patch module is not recommended as it disabling deep buffer which causes FX is not processing correctly
 - Delete /data/adb/modules/AudioWizard and /persist|metadata/magisk/AudioWizard via recovery if facing bootloop and send copied and zipped /data/system/dropbox files to dev for fix
 
 ## Attention!
@@ -82,7 +82,6 @@
 
 ## Telegram
 - https://t.me/audioryukimods
-- https://t.me/modsandco
 
 ## Donate
 - https://www.paypal.me/reiryuki
