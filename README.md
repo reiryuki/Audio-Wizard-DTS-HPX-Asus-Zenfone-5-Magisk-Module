@@ -7,7 +7,6 @@
 - Changing build product and product model, may break your platform apps and features functionality
 
 ## Not Compatible with
-- Mi Music or any player that forcing compress offload playback
 - Dolby, Moto Waves, AudioFX Moto, or any global type soundfx (different case in different rom)
 
 ## Compatible with
