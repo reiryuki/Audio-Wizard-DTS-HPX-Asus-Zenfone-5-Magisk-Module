@@ -7,7 +7,8 @@
 - Changing build product and product model, may break your platform apps and features functionality
 
 ## Not Compatible with
-- Dolby, Moto Waves, AudioFX Moto, or any global type soundfx (different case in different rom)
+- Dolby, Moto Waves, AudioFX Moto, or any global type soundfx (different case in different rom
+- PUBG Mobile
 
 ## Compatible with
 - Sound Enhancement Xperia
