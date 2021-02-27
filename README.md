@@ -7,6 +7,7 @@
 - Changing build product and product model, may break your platform apps and features functionality
 
 ## Not Compatible with
+- Mi Music or any player that forcing compress offload playback
 - Dolby, Moto Waves, AudioFX Moto, or any global type soundfx (different case in different rom
 - PUBG Mobile
 
@@ -59,7 +60,6 @@
    Then reflash the module.
 - No possible to patch ro.product.model because of DTS license check
 - Install Audio Modification Library module if you using other audio mods
-- Audio Compatibility Patch module is not recommended as it disabling deep buffer which causes FX is not processing correctly
 - Delete /data/adb/modules/AudioWizard and /persist|metadata/magisk/AudioWizard via recovery if facing bootloop and send copied and zipped /data/system/dropbox files to dev for fix
 
 ## Attention!
