@@ -30,43 +30,10 @@
 ## Optional
 
 ## Troubleshootings
-- If UI shows blank only, you should reboot it again without reinstalling. It's probably Magisk sepolicy.rule bug.
-- If SE policy patch doesn't work for your device, run at Terminal Emulator:
-
-  `su`
-
-  `setprop` `aw.permissive` `1`
-
-   Then reflash the module
-- You can also using both permissive mode and SE policy rule with:
-
-  `su`
-
-  `setprop` `aw.permissive` `2`
-
-- If something goes wrong with Audio Wizard data, run at Terminal Emulator:
-
-  `su`
-
-  `setprop` `aw.cleanup` `1`
-
-   Then reflash the module
-- Patch to not change ro.build.product is enabled by default (v1.3). But if you got problem with it, you can disable it by run at Terminal Emulator:
-  
-  `su`
-
-  `setprop` `aw.patch` `0`
-
-   Then reflash the module.
-- No possible to patch ro.product.model because of DTS license check
-- Install Audio Modification Library module if you using other audio mods
-- Delete /data/adb/modules/AudioWizard and /persist|metadata/magisk/AudioWizard via recovery if facing bootloop and send copied and zipped /data/system/dropbox files to dev for fix
-
-## Attention!
-- Always make nandroid backup before install or updating version, these are just experiments!
+- https://t.me/audioryukimods/3107
 
 ## Report Guide
-- [Tap here](https://t.me/audioryukimods/2618)
+- https://t.me/audioryukimods/2618
 
 ## Credits and contributors
 - @Michi_Nemuritor
@@ -78,7 +45,7 @@
 - @aquahol
 - @aip_x
 
-## Supports
+## Thanks for Supports
 - [Tap here](https://t.me/audioryukimods/2619)
 
 ## Telegram
