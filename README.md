@@ -1,4 +1,4 @@
-# Audio Wizard DTS Headphone X Asus Zenfone 5 Magisk Module
+# Audio Wizard Asus Zenfone 5 Magisk Module
 
 ## Descriptions
 - An equalizer ported from Asus Zenfone 5 (ASUS_X00QD) SDK 28
@@ -46,10 +46,7 @@
 - @aip_x
 
 ## Thanks for Supports
-- [Tap here](https://t.me/audioryukimods/2619)
-
-## Telegram
-- https://t.me/audioryukimods
+- https://t.me/audioryukimods/2619
 
 ## Donate
 - https://www.paypal.me/reiryuki
