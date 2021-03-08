@@ -1,20 +1,20 @@
 # Audio Wizard Asus Zenfone 5 Magisk Module
 
 ## Descriptions
-- An equalizer ported from Asus Zenfone 5 (ASUS_X00QD) SDK 28
-- Still using SoundFX library from Oreo source by @Michi_Nemuritor
+- An equalizer ported from Asus Zenfone 5 (ASUS_X00QD)
 - Post process type FX
 - Changing build product and product model, may break your platform apps and features functionality
 
 ## Not Compatible with
 - Mi Music or any player that forcing compress offload playback
-- Dolby, Moto Waves, AudioFX Moto, or any global type soundfx (different case in different rom
+- Dolby, Moto Waves, AudioFX Moto, Viper, or any global type soundfx (different case in different rom
 - PUBG Mobile
 
 ## Compatible with
 - Sound Enhancement Xperia
 - MusicFX AOSP
 - AudioFX LineageOS
+- Any post process type soundfx
 
 ## Requirements
 - Android 8.0, 8.1, 9, 10, or 11
