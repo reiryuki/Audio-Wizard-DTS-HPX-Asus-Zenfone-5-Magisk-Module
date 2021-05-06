@@ -1,4 +1,4 @@
-# Audio Wizard Asus Zenfone 5 Magisk Module
+# Audio Wizard DTS HPX Asus Zenfone 5 Magisk Module
 
 ## Descriptions
 - An equalizer ported from Asus Zenfone 5 (ASUS_X00QD)
