@@ -3,15 +3,15 @@
 ## Descriptions
 - An equalizer ported from Asus Zenfone 5 (ASUS_X00QD)
 - Post process type soundfx
-- Changing build product and product model, may break your platform apps and features functionality
+- Changing ro.build.product and ro.product.model, may break your platform apps and features functionality
 
 ## Not Compatible with
 - Mi Music or any player that forcing compress offload playback
 - Global type soundfx but different case in different ROM/vendor/kernel
-- PUBG Mobile
+- PUBG Mobile (no support for this)
 
 ## Requirements
-- Android 8.0, 8.1, 9, 10, or 11
+- Android 11, 10, 9, or 8
 - Magisk installed
 
 ## Tested on
