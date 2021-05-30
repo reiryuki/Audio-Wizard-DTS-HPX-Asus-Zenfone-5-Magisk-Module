@@ -45,4 +45,4 @@
 - https://www.paypal.me/reiryuki
 
 ## Download
-- New version v3.4 here: https://www.pling.com/p/1531268/
+- Moved link new version v3.4 here: https://www.pling.com/p/1531268/
