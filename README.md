@@ -32,7 +32,7 @@
 - https://t.me/androidryukimodsdiscussions/2618
 
 ## Credits and contributors
-- DTS Port Team
+- DTS Ports Team
 - Android Ryuki Mods Discussions Team
 - https://t.me/androidryukimodsdiscussions/25188
 
