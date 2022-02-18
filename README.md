@@ -11,34 +11,34 @@
 - PUBG Mobile (no support for this)
 
 ## Requirements
-- Android 8 until 12
+- Android 9 and up
 - Magisk installed
 
 ## Tested on
 - Android 10 CrDroid ROM
 - Android 11 DotOS ROM
+- Android 12 Ancient OS ROM
 
 ## Installation Guide
 - Install the module via Magisk Manager or Recovery
-- Install Audio Modification Library module if you're using other audio mods
+- Install Audio Modification Library module if you're using any other audio mods
 - Reboot (reboot twice without reinstalling if you have Magisk sepolicy.rule bug)
 
-## Optionals
-
-## Troubleshootings
+## Troubleshootings and Optionals
 - https://t.me/androidryukimodsdiscussions/3107
 
 ## Bug Report
 - https://t.me/androidryukimodsdiscussions/2618
 
 ## Credits and contributors
-- DTS Ports Team
-- Android Ryuki Mods Discussions Team
-- https://t.me/androidryukimodsdiscussions/25188
+- https://t.me/viperatmos
+- DTS Ports Group
+- https://t.me/androidryukimodsdiscussions
+- https://t.me/androidappsportdevelopment
 
 ## Thanks for Donations
 - https://t.me/androidryukimodsdiscussions/2619
 - https://www.paypal.me/reiryuki
 
 ## Download
-- Moved link here: https://www.pling.com/p/1531268/
+- https://www.pling.com/p/1531268/
