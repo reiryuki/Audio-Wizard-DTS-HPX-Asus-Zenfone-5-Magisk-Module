@@ -25,6 +25,8 @@
 - Reboot (reboot twice without reinstalling if you have Magisk sepolicy.rule bug)
 
 ## Troubleshootings and Optionals
+- https://t.me/androidryukimodsdiscussions/29836
+- https://t.me/androidryukimodsdiscussions/60861
 - https://t.me/androidryukimodsdiscussions/3107
 
 ## Bug Report
