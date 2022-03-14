@@ -1,0 +1,13 @@
+on post-fs-data
+    mkdir /data/misc/aw 0777 audio audio
+    write /data/misc/aw/route_path.info 0
+    restorecon_recursive /data/misc/aw/route_path.info
+    chmod 777 /data/misc/aw/route_path.info
+    mkdir /data/vendor/audio/dts 0771 media audio
+    copy /data/misc/dts/dts_hpx_settings /data/vendor/audio/dts/dts_hpx_settings
+    chown audioserver audio /data/vendor/audio/dts/dts_hpx_settings
+    rm /data/misc/dts/dts_hpx_settings
+    rmdir /data/misc/dts
+
+
+
