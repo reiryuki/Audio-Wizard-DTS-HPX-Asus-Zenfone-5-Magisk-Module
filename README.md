@@ -5,11 +5,6 @@
 - Post process type soundfx
 - Changing ro.build.product and ro.product.model, may break your platform apps and features functionality
 
-## Not Compatible with
-- Mi Music or any player that forcing compress offload playback
-- Global type soundfx but different case in different ROM/vendor/kernel
-- PUBG Mobile (no support for this)
-
 ## Requirements
 - Android 9 and up
 - Magisk installed
@@ -21,8 +16,7 @@
 
 ## Installation Guide
 - Install the module via Magisk Manager or Recovery
-- Install Audio Modification Library module if you're using any other audio mods
-- Reboot (reboot twice without reinstalling if you have Magisk sepolicy.rule bug)
+- Reboot
 
 ## Troubleshootings and Optionals
 - https://t.me/androidryukimodsdiscussions/29836
