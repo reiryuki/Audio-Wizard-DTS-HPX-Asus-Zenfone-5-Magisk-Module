@@ -16,6 +16,7 @@
 
 ## Installation Guide
 - Install the module via Magisk Manager or Recovery
+- Install AML module only if using any other audio mod modules
 - Reboot
 
 ## Troubleshootings and Optionals
