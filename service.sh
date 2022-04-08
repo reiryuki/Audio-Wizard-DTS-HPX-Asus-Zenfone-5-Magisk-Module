@@ -1,6 +1,18 @@
 (
 
 MODPATH=${0%/*}
+API=`getprop ro.build.version.sdk`
+
+# debug
+exec 2>$MODPATH/debug.log
+set -x
+
+# prevent soft reboot
+echo 0 > /proc/sys/kernel/panic
+echo 0 > /proc/sys/kernel/panic_on_oops
+echo 0 > /proc/sys/kernel/panic_on_rcu_stall
+echo 0 > /proc/sys/kernel/panic_on_warn
+echo 0 > /proc/sys/vm/panic_on_oom
 
 # property
 resetprop ro.build.product ZE620KL
@@ -38,14 +50,32 @@ if ! [ "$PROP" ]; then
   resetprop -n persist.sys.cta.security 0
 fi
 
+# wait
+sleep 20
+
+# mount
+AML=/data/adb/modules/aml
+if [ ! -d $AML ] || [ -f $AML/disable ]; then
+  DIR=$MODPATH/system/vendor
+else
+  DIR=$AML/system/vendor
+fi
+FILE=`find $DIR/odm/etc -maxdepth 1 -type f -name *audio*effects*.conf\
+      -o -name *audio*effects*.xml -o -name *audio*policy*.conf\
+      -o -name *stage*policy*.conf -o -name *audio*policy*.xml`
+if [ "$FILE" ]; then
+  for i in $FILE; do
+    j="$(echo $i | sed "s|$DIR||")"
+    umount $j
+    mount -o bind $i $j
+  done
+fi
+
 # kill
 killall audioserver
 
 # wait
-sleep 60
-
-# store
-PROP=`getprop ro.build.version.sdk`
+sleep 40
 
 # grant
 PKG=com.asus.maxxaudio
@@ -55,7 +85,7 @@ pm grant $PKG android.permission.ACCESS_MEDIA_LOCATION
 pm grant $PKG android.permission.READ_PHONE_STATE
 pm grant $PKG android.permission.READ_CALL_LOG
 appops set $PKG WRITE_SETTINGS allow
-if [ "$PROP" -gt 29 ]; then
+if [ "$API" -ge 30 ]; then
   appops set $PKG AUTO_REVOKE_PERMISSIONS_IF_UNUSED ignore
 fi
 
@@ -70,7 +100,7 @@ fi
 # grant
 PKG=com.asus.maxxaudio.audiowizard
 pm grant $PKG android.permission.RECORD_AUDIO
-if [ "$PROP" -gt 29 ]; then
+if [ "$API" -ge 30 ]; then
   appops set $PKG AUTO_REVOKE_PERMISSIONS_IF_UNUSED ignore
 fi
 
