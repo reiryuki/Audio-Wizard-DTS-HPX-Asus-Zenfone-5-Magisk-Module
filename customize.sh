@@ -394,7 +394,7 @@ fi
 
 # function
 grant_permission() {
-  if [ "$BOOTMODE" == true ]; then
+  if [ "$BOOTMODE" == true ] && ! dumpsys package $PKG | grep -Eq "$NAME: granted=true"; then
     FILE=`find $MODPATH/system -type f -name $APP.apk`
     ui_print "- Granting all runtime permissions for $PKG..."
     RES=`pm install -g -i com.android.vending $FILE`

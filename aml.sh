@@ -1,6 +1,6 @@
 MODPATH=${0%/*}
 
-# destinations
+# destination
 MODAEC=`find $MODPATH/system -type f -name *audio*effects*.conf`
 MODAEX=`find $MODPATH/system -type f -name *audio*effects*.xml`
 MODAP=`find $MODPATH/system -type f -name *policy*.conf -o -name *policy*.xml`
@@ -45,9 +45,9 @@ if [ "$MODAEC" ]; then
   sed -i "/^        ma_voice_helper {/ {;N s/        ma_voice_helper {\n        }//}" $MODAEC
   sed -i "/^        ma_system_helper {/ {;N s/        ma_system_helper {\n        }//}" $MODAEC
   sed -i "/^        ma_notification_helper {/ {;N s/        ma_notification_helper {\n        }//}" $MODAEC
-  sed -i "/^        sa3d {/ {;N s/        sa3d {\n        }//}" $MODAEC
-  sed -i "/^        fens {/ {;N s/        fens {\n        }//}" $MODAEC
-  sed -i "/^        lmfv {/ {;N s/        lmfv {\n        }//}" $MODAEC
+#  sed -i "/^        sa3d {/ {;N s/        sa3d {\n        }//}" $MODAEC
+#  sed -i "/^        fens {/ {;N s/        fens {\n        }//}" $MODAEC
+#  sed -i "/^        lmfv {/ {;N s/        lmfv {\n        }//}" $MODAEC
   sed -i "/^        dirac {/ {;N s/        dirac {\n        }//}" $MODAEC
   if ! grep -Eq '^output_session_processing {' $MODAEC; then
     sed -i -e '$a\
@@ -95,9 +95,9 @@ if [ "$MODAEX" ]; then
   sed -i 's/<apply effect="ma_voice_helper"\/>//g' $MODAEX
   sed -i 's/<apply effect="ma_system_helper"\/>//g' $MODAEX
   sed -i 's/<apply effect="ma_notification_helper"\/>//g' $MODAEX
-  sed -i 's/<apply effect="sa3d"\/>//g' $MODAEX
-  sed -i 's/<apply effect="fens"\/>//g' $MODAEX
-  sed -i 's/<apply effect="lmfv"\/>//g' $MODAEX
+#  sed -i 's/<apply effect="sa3d"\/>//g' $MODAEX
+#  sed -i 's/<apply effect="fens"\/>//g' $MODAEX
+#  sed -i 's/<apply effect="lmfv"\/>//g' $MODAEX
   sed -i 's/<apply effect="dirac"\/>//g' $MODAEX
   if ! grep -Eq '<postprocess>' $MODAEX || grep -Eq '<!-- Audio post processor' $MODAEX; then
     sed -i '/<\/effects>/a\
