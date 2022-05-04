@@ -1,7 +1,7 @@
 id=AudioWizard
 name=Audio Wizard DTS HPX Asus Zenfone 5
-version=v6.7
-versionCode=57
+version=v6.6-R
+versionCode=56
 author=Rei Ryuki the Fixer
 description=An EQ ported from Asus Zenfone 5 for any Android 9 and up.
 # Source: https://dumps.tadiphone.dev/dumps/asus/asus_x00qd WW_Phone-user-9-PPR1.180610.009-16.0615.1910.112-0-release-keys
