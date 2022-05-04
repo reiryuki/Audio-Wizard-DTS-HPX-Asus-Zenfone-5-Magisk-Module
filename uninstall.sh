@@ -1,6 +1,3 @@
-(
-
-mount /data
 mount -o rw,remount /data
 MODPATH=${0%/*}
 MODID=`echo "$MODPATH" | sed -n -e 's/\/data\/adb\/modules\///p'`
@@ -22,7 +19,5 @@ rm -rf /data/misc/aw
 resetprop -p --delete persist.sys.cta.security
 resetprop -p --delete persist.asus.aw.forceToGetDevices
 resetprop -p --delete persist.asus.stop.audio_wizard_service
-
-) 2>/dev/null
 
 
