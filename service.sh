@@ -54,7 +54,8 @@ if [ -d $DIR ] && [ ! -f $AML/disable ]; then
 fi
 
 # mount
-NAME="*audio*effects*.conf -o -name *audio*effects*.xml -o -name *policy*.conf -o -name *policy*.xml"
+NAME="*audio*effects*.conf -o -name *audio*effects*.xml"
+#pNAME="*audio*effects*.conf -o -name *audio*effects*.xml -o -name *policy*.conf -o -name *policy*.xml"
 if [ ! -d $AML ] || [ -f $AML/disable ]; then
   DIR=$MODPATH/system/vendor
 else
@@ -89,9 +90,6 @@ sleep 40
 
 # grant
 PKG=com.asus.maxxaudio
-pm grant $PKG android.permission.READ_EXTERNAL_STORAGE
-pm grant $PKG android.permission.WRITE_EXTERNAL_STORAGE
-pm grant $PKG android.permission.ACCESS_MEDIA_LOCATION
 pm grant $PKG android.permission.READ_PHONE_STATE
 pm grant $PKG android.permission.READ_CALL_LOG
 appops set $PKG WRITE_SETTINGS allow
