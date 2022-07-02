@@ -4,6 +4,7 @@
 - An equalizer ported from Asus Zenfone 5 (ASUS_X00QD)
 - Post process type soundfx
 - Changing ro.build.product and ro.product.model, may break your platform apps and features functionality
+- Sources: https://github.com/reiryuki/Audio-Wizard-DTS-HPX-Asus-Zenfone-5-Magisk-Module/blob/main/module.prop
 
 ## Requirements
 - Android 9 and up
