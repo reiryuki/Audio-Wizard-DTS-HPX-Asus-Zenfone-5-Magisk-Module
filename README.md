@@ -18,7 +18,7 @@
 
 ## Requirements
 - Android 9 and up
-- Magisk Installed
+- Magisk installed
 
 ## Installation Guide & Download Link
 - Install this module https://www.pling.com/p/1531268/ via Magisk Manager or Recovery
