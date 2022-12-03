@@ -106,15 +106,6 @@ fi
 sleep 40
 
 # grant
-PKG=com.asus.maxxaudio
-pm grant $PKG android.permission.READ_PHONE_STATE
-pm grant $PKG android.permission.READ_CALL_LOG
-appops set $PKG WRITE_SETTINGS allow
-if [ "$API" -ge 30 ]; then
-  appops set $PKG AUTO_REVOKE_PERMISSIONS_IF_UNUSED ignore
-fi
-
-# grant
 PKG=com.asus.maxxaudio.audiowizard
 pm grant $PKG android.permission.RECORD_AUDIO
 if [ "$API" -ge 33 ]; then
@@ -123,5 +114,16 @@ fi
 if [ "$API" -ge 30 ]; then
   appops set $PKG AUTO_REVOKE_PERMISSIONS_IF_UNUSED ignore
 fi
+
+# grant
+PKG=com.asus.maxxaudio
+pm grant $PKG android.permission.READ_PHONE_STATE
+pm grant $PKG android.permission.READ_CALL_LOG
+appops set $PKG WRITE_SETTINGS allow
+if [ "$API" -ge 30 ]; then
+  appops set $PKG AUTO_REVOKE_PERMISSIONS_IF_UNUSED ignore
+fi
+sleep 30
+killall com.asus.audiowizard
 
 
