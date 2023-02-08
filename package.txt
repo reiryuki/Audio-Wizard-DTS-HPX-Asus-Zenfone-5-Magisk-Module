@@ -1,0 +1,2 @@
+com.asus.maxxaudio.audiowizard
+com.asus.maxxaudio
