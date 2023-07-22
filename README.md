@@ -1,8 +1,8 @@
 # Audio Wizard DTS HPX Asus Zenfone 5 Magisk Module
 
 ## DISCLAIMER
-- DTS Apps and blobs are owned by DTS™.
-- The MIT license specified here is for the Magisk Module, not for DTS apps and blobs.
+- Asus & DTS Apps and blobs are owned by Asus™ & DTS™.
+- The MIT license specified here is for the Magisk Module only, not for Asus & DTS apps and blobs.
 
 ## Descriptions
 - Equalizer soundfx ported from Asus Zenfone 5 (ASUS_X00QD) and integrated as a Magisk Module for all supported and rooted devices with Magisk
@@ -10,7 +10,7 @@
 - Changes ro.build.product and ro.product.model system property, may breaks your platform apps and features functionality
 
 ## Sources
-- https://dumps.tadiphone.dev/dumps/asus/asus_x00qd WW_Phone-user-9-PPR1.180610.009-16.0615.1910.112-0-release-keys
+- https://dumps.tadiphone.dev/dumps/asus/x00qd WW_Phone-user-9-PPR1.180610.009-16.0615.1910.112-0-release-keys
 - libdtsaudio.so & dts-eagle.lic: https://github.com/adeveloper79/dump_vendor_z01r/tree/1906e7c8e77ead8638115ba5cd0e878c25247960
 
 ## Screenshots
@@ -18,12 +18,14 @@
 
 ## Requirements
 - Android 9 and up
-- Magisk installed
+- Magisk or KernelSU installed
 
 ## Installation Guide & Download Link
-- Install this module https://www.pling.com/p/1531268/ via Magisk app or Recovery
+- Install this module https://www.pling.com/p/1531268/ via Magisk app or KernelSU app or Recovery if Magisk installed
 - Install AML Magisk Module https://t.me/androidryukimodsdiscussions/29836 only if using any other audio mod module
 - Reboot
+- If you are using KernelSU, you need to allow superuser list manually all package name listed in package.txt (and your home launcher app also) (enable show system apps) and reboot after
+- If you are using SUList, you need to allow list manually your home launcher app (enable show system apps) and reboot after
 
 ## Troubleshootings and Optionals
 - https://t.me/androidryukimodsdiscussions/29836
@@ -40,7 +42,7 @@
 - Android 11 DotOS ROM
 - Android 12 Ancient OS ROM
 - Android 12.1 Nusantara ROM
-- Android 13 AOSP ROM
+- Android 13 AOSP ROM & CrDroid ROM
 
 ## Credits and contributors
 - https://t.me/viperatmos
