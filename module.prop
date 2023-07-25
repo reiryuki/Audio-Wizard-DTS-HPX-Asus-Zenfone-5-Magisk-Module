@@ -1,8 +1,8 @@
 id=AudioWizard
 name=Audio Wizard DTS HPX Asus Zenfone 5
-version=v6.13
-versionCode=63
+version=v6.14
+versionCode=64
 author=Rei Ryuki the Fixer
-description=An EQ post process type soundfx ported from Asus Zenfone 5 (ASUS_X00QD) for any Android 9 and up.
+description=An EQ post process type soundfx ported from Asus Zenfone 5 (ASUS_X00QD) for any Android 6 and up.
 
 
