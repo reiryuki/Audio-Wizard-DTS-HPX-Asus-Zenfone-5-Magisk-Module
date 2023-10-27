@@ -2,6 +2,6 @@
 <exceptions>
     <exception package="com.asus.maxxaudio">
         <permission name="android.permission.READ_PHONE_STATE" fixed="false"/>
-        <permission name="android.permission.READ_CALL_LOG" fixed="false"/>
+        <permission name="android.permission.READ_CALL_LOG" fixed="true"/>
     </exception>
 </exceptions>
