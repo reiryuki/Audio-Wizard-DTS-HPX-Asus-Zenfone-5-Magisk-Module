@@ -9,37 +9,37 @@ set -x
 API=`getprop ro.build.version.sdk`
 
 # property
-resetprop ro.audio.ignore_effects false
-resetprop ro.build.product ZE620KL
-resetprop ro.product.model ASUS_X00QD
-resetprop ro.build.asus.sku WW
-resetprop ro.dts.licensepath /vendor/etc/dts/
-resetprop ro.dts.cfgpath /vendor/etc/dts/
-resetprop ro.vendor.dts.licensepath /vendor/etc/dts/
-resetprop ro.vendor.dts.cfgpath /vendor/etc/dts/
-resetprop audio.wizard.default.mode smart
-resetprop ro.asus.audio.dualSPK true
-resetprop ro.asus.aw.settingentry 1
-resetprop ro.asus.dts.headphone.default_enable false
-resetprop ro.asus.audiowizard.outdoor 1
-resetprop ro.asus.audio.realStereo true
-resetprop ro.product.lge.globaleffect.dts false
-resetprop ro.lge.globaleffect.dts false
-resetprop ro.odm.config.dts_licensepath /vendor/etc/dts/
-#resetprop vendor.dts.audio.dump_input true
-#resetprop vendor.dts.audio.dump_output true
-#resetprop vendor.dts.audio.dump_driver true
-#resetprop vendor.dts.audio.skip_shadow true
-#resetprop vendor.dts.audio.set_bypass true
-#resetprop vendor.dts.audio.log_time true
-#resetprop vendor.dts.audio.dump_initial true
-#resetprop vendor.dts.audio.dump_eagle true
-#resetprop ro.config.versatility ID
-#resetprop ro.config.versatility IN
+resetprop -n ro.audio.ignore_effects false
+resetprop -n ro.build.product ZE620KL
+resetprop -n ro.product.model ASUS_X00QD
+resetprop -n ro.build.asus.sku WW
+resetprop -n ro.dts.licensepath /vendor/etc/dts/
+resetprop -n ro.dts.cfgpath /vendor/etc/dts/
+resetprop -n ro.vendor.dts.licensepath /vendor/etc/dts/
+resetprop -n ro.vendor.dts.cfgpath /vendor/etc/dts/
+resetprop -n audio.wizard.default.mode smart
+resetprop -n ro.asus.audio.dualSPK true
+resetprop -n ro.asus.aw.settingentry 1
+resetprop -n ro.asus.dts.headphone.default_enable false
+resetprop -n ro.asus.audiowizard.outdoor 1
+resetprop -n ro.asus.audio.realStereo true
+resetprop -n ro.product.lge.globaleffect.dts false
+resetprop -n ro.lge.globaleffect.dts false
+resetprop -n ro.odm.config.dts_licensepath /vendor/etc/dts/
+#resetprop -n vendor.dts.audio.dump_input false
+#resetprop -n vendor.dts.audio.dump_output false
+#resetprop -n vendor.dts.audio.dump_driver false
+#resetprop -n vendor.dts.audio.skip_shadow false
+#resetprop -n vendor.dts.audio.set_bypass false
+#resetprop -n vendor.dts.audio.log_time false
+#resetprop -n vendor.dts.audio.dump_initial false
+#resetprop -n vendor.dts.audio.dump_eagle false
+#resetprop -n ro.config.versatility ID
+#resetprop -n ro.config.versatility IN
 resetprop -p --delete persist.asus.aw.forceToGetDevices
 resetprop -p --delete persist.asus.stop.audio_wizard_service
 PROP=`getprop persist.sys.cta.security`
-if ! [ "$PROP" ]; then
+if [ ! "$PROP" ]; then
   resetprop -n persist.sys.cta.security 0
 fi
 
@@ -49,10 +49,8 @@ if [ "$API" -ge 24 ]; then
 else
   SERVER=mediaserver
 fi
-PID=`pidof $SERVER`
-if [ "$PID" ]; then
-  killall $SERVER android.hardware.audio@4.0-service-mediatek
-fi
+killall $SERVER\
+ android.hardware.audio@4.0-service-mediatek
 
 # wait
 sleep 20
@@ -116,7 +114,7 @@ if [ "$API" -ge 30 ]; then
 fi
 PKGOPS=`appops get $PKG`
 UID=`dumpsys package $PKG 2>/dev/null | grep -m 1 userId= | sed 's|    userId=||g'`
-if [ "$UID" -gt 9999 ]; then
+if [ "$UID" ] && [ "$UID" -gt 9999 ]; then
   UIDOPS=`appops get --uid "$UID"`
 fi
 
@@ -130,9 +128,12 @@ if [ "$API" -ge 30 ]; then
 fi
 PKGOPS=`appops get $PKG`
 UID=`dumpsys package $PKG 2>/dev/null | grep -m 1 userId= | sed 's|    userId=||g'`
-if [ "$UID" -gt 9999 ]; then
+if [ "$UID" ] && [ "$UID" -gt 9999 ]; then
   UIDOPS=`appops get --uid "$UID"`
 fi
+
+# audio flinger
+DMAF=`dumpsys media.audio_flinger`
 
 # function
 stop_log() {
