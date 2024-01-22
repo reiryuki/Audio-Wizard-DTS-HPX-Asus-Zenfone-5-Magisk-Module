@@ -319,9 +319,9 @@ if [ "$BOOTMODE" == true ]\
   pm grant $PKG $NAME
   if ! dumpsys package $PKG | grep -q "$NAME: granted=true"; then
     ui_print "  ! Failed."
-    ui_print "  Maybe insufficient storage."
-    ui_print "  or maybe there is in-built $PKG exist."
-    ui_print "  Just ignore this."
+    ui_print "    Maybe insufficient storage"
+    ui_print "    or maybe there is in-built $PKG exist."
+    ui_print "    Just ignore this."
   fi
   RES=`pm uninstall -k $PKG 2>/dev/null`
   ui_print " "
