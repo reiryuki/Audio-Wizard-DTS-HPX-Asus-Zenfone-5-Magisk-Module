@@ -47,7 +47,7 @@
 - Android 14 LineageOS ROM
 
 ## Known Issue
-- Probably still bug in game apps in some devices
+- Probably still bug microphone in game apps in some devices
 
 ## Credits and Contributors
 - https://t.me/viperatmos
