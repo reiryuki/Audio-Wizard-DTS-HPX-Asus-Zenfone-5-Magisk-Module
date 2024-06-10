@@ -103,6 +103,23 @@ until [ "`getprop sys.boot_completed`" == 1 ]; do
   sleep 10
 done
 
+# list
+PKGS="`cat $MODPATH/package.txt`
+       com.asus.audiowizard"
+for PKG in $PKGS; do
+  magisk --denylist rm $PKG 2>/dev/null
+  magisk --sulist add $PKG 2>/dev/null
+done
+if magisk magiskhide sulist; then
+  for PKG in $PKGS; do
+    magisk magiskhide add $PKG
+  done
+else
+  for PKG in $PKGS; do
+    magisk magiskhide rm $PKG
+  done
+fi
+
 # grant
 PKG=com.asus.maxxaudio.audiowizard
 pm grant $PKG android.permission.RECORD_AUDIO
@@ -162,7 +179,8 @@ check_audioserver
 }
 
 # check
-PROC="com.asus.audiowizard com.asus.maxxaudio.audiowizard"
+PROC="com.asus.audiowizard com.asus.maxxaudio
+      com.asus.maxxaudio.audiowizard"
 killall $PROC
 check_audioserver
 
