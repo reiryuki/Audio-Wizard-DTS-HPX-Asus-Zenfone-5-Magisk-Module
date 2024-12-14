@@ -42,7 +42,6 @@
 
 ## Known Issues
 - Probably still bug microphone in game apps in some devices
-- Does not work in Android 14 QPR3 (AP2A)
 
 ## Credits and Contributors
 - @HuskyDG
