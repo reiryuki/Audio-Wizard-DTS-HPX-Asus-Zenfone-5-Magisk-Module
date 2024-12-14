@@ -1,7 +1,7 @@
 id=AudioWizard
 name=Audio Wizard DTS HPX Asus Zenfone 5
-version=v7.3
-versionCode=73
+version=v7.4
+versionCode=74
 author=Rei Ryuki the Fixer
 description=Equalizer post process type sound effect ported from Asus Zenfone 5 (ASUS_X00QD) for any arm64-v8a or armeabi-v7a architecture, Android 6 (SDK 23) and up.
 
