@@ -8,6 +8,5 @@ on post-fs-data
     chown audioserver audio /data/vendor/audio/dts/dts_hpx_settings
     rm /data/misc/dts/dts_hpx_settings
     rmdir /data/misc/dts
-
-
-
+    setprop ro.vendor.dts.licensepath "/vendor/etc/dts/"
+    setprop ro.vendor.dts.cfgpath "/vendor/etc/dts/"
