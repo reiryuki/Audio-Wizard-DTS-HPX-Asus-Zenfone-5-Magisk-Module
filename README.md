@@ -17,6 +17,48 @@
 ## Screenshots
 - https://t.me/androidryukimodsdiscussions/1947
 
+## Changelog
+
+v8.1
+- Does not disable raw playback (You can use Audio Compatibility Patch Reborn Magisk Module instead)
+
+v8.0
+- Fix wrong target in latest KernelSU
+- Hide built-in DtsAudio.apk
+
+v7.9
+- Tidy up aml.sh
+- Exclude audioeffectshaptic.xml
+- Abort installation if fail to mount mirror system
+- Fix wrong file permissions in some ROMs
+
+v7.8
+- Improve /odm and /my_product support detection
+
+v7.7
+- Fix script bug at installation for libsqlite.so detections
+
+v7.6
+- Move apk to priv-app
+- Fix permission
+- Add Action button to clear apps caches
+- Fix architecture detection in some weird ROMs
+- Fix bug in uninstall.sh
+
+v7.5
+- Removes conflicted module
+- Detects vndk libsqlite.so in apex
+
+v7.4
+- Fix missing libsqlite.so in SDK 35
+
+v7.3
+- Allow installation in Android Emulator
+
+v7.2
+- Fix architecture detection
+- Improve xml patch detection
+
 ## Requirements
 - arm64-v8a or armeabi-v7a architecture
 - Android 6 (SDK 23) and up
@@ -25,7 +67,7 @@
 
 ## Installation Guide & Download Link
 - If you are using KernelSU, you need to disable Unmount Modules by Default in KernelSU app settings and install https://github.com/KernelSU-Modules-Repo/meta-overlayfs first
-- Install this module https://www.pling.com/p/1531268/ via Magisk app or Kitsune Mask app or KernelSU app or Apatch app or Recovery if Magisk or Kitsune Mask installed
+- Install this module via Magisk app or Kitsune Mask app or KernelSU app or Apatch app or Recovery if Magisk or Kitsune Mask installed
 - Install AML Magisk Module https://t.me/ryukinotes/34 only if using any other else audio mod module
 - Reboot
 - If you are using KernelSU, you need to allow superuser list manually all package name listed in package.txt (and your home launcher app also) (enable show system apps) and reboot afterwards
